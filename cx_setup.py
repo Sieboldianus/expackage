@@ -75,14 +75,21 @@ NUMPY_DLLS_FULLPATH.append(
 INCLUDE_FOLDERS_FILES = [
     (DISTUTILS_PATH, 'distutils'),
     'README.md',
-    'points.pkl',
+    'points.pkl',  # example data
+    'points_small.pkl',  # example data
 ] + NUMPY_DLLS_FULLPATH
 
 PACKAGES_MOD = ["hdbscan", "multiprocessing"]
 EXCLUDES_MOD = [
     'scipy.spatial.cKDTree',
     "distutils",
-    'sklearn.externals.joblib']
+    'sklearn.externals.joblib',
+    'tkinter',
+    'PyQt4.QtSql',
+    'sqlite3',
+    'PyQt4.QtNetwork',
+    'PyQt4.QtScript',
+    'PyQt5']
 
 
 # GUI applications require a different base on Windows
