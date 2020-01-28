@@ -25,11 +25,11 @@ Download builds for each branch:
 
 Logs (`expackage.exe` cli-mode):
 
-* [pool.log](/expackage/logs/pool.log)
+* [pool.log](logs/pool.log)
     - cluster function returns results
     - after "Press any key to exit...": `OSError: [WinError 87] The parameter is incorrect`
 
-* [queuethread.log](/expackage/logs/pool.log)
+* [queuethread.log](logs/queuethread.log)
     - multiprocessing bomb, failing with:
     ```
     joblib.externals.loky.process_executor.TerminatedWorkerError: A worker process managed by the executor was unexpectedly terminated.
@@ -39,7 +39,7 @@ Logs (`expackage.exe` cli-mode):
     ERROR: The process "13552" not found.
     ERROR: The process "17616" not found.
     ```
-* [threadpool.log](/expackage/logs/threadpool.log)
+* [threadpool.log](logs/threadpool.log)
     - equal to queuethread
 
 * contextpool (existing pool object)
