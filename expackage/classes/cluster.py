@@ -12,6 +12,8 @@ import hdbscan
 import numpy as np
 import pickle
 
+# spawn is default for windows
+# simulate same behaviour in linux
 multiprocessing.set_start_method('spawn')
 POOL = multiprocessing.Pool(processes=1)
 
