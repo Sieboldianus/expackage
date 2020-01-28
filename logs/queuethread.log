@@ -1,0 +1,243 @@
+expackage.exe
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "...\lib\site-packages\cx_Freeze\initscripts\__startup__.py", line 40, in run
+  File "...\lib\site-packages\cx_Freeze\initscripts\__startup__.py", line 40, in run
+    module.run()
+  File "...\lib\site-packages\cx_Freeze\initscripts\Console.py", line 37, in run
+    module.run()
+  File "...\lib\site-packages\cx_Freeze\initscripts\Console.py", line 37, in run
+    exec(code, {'__name__': '__main__'})
+  File "expackage/__main__.py", line 43, in <module>
+    exec(code, {'__name__': '__main__'})
+  File "expackage/__main__.py", line 43, in <module>
+  File "...\lib\multiprocessing\context.py", line 149, in freeze_support
+  File "...\lib\multiprocessing\context.py", line 149, in freeze_support
+    freeze_support()
+    freeze_support()
+  File "...\lib\multiprocessing\spawn.py", line 69, in freeze_support
+  File "...\lib\multiprocessing\spawn.py", line 69, in freeze_support
+    name, value = arg.split('=')
+    name, value = arg.split('=')
+ValueError: not enough values to unpack (expected 2, got 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "...\lib\site-packages\cx_Freeze\initscripts\__startup__.py", line 40, in run
+    module.run()
+  File "...\lib\site-packages\cx_Freeze\initscripts\Console.py", line 37, in run
+    exec(code, {'__name__': '__main__'})
+  File "expackage/__main__.py", line 43, in <module>
+  File "...\lib\multiprocessing\context.py", line 149, in freeze_support
+    freeze_support()
+  File "...\lib\multiprocessing\spawn.py", line 69, in freeze_support
+    name, value = arg.split('=')
+ValueError: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "...\lib\site-packages\cx_Freeze\initscripts\__startup__.py", line 40, in run
+    module.run()
+  File "...\lib\site-packages\cx_Freeze\initscripts\Console.py", line 37, in run
+    exec(code, {'__name__': '__main__'})
+  File "expackage/__main__.py", line 43, in <module>
+  File "...\lib\multiprocessing\context.py", line 149, in freeze_support
+    freeze_support()
+  File "...\lib\multiprocessing\spawn.py", line 69, in freeze_support
+    name, value = arg.split('=')
+ValueError: not enough values to unpack (expected 2, got 1)
+ERROR: The process "17804" not found.
+ERROR: The process "16380" not found.
+ERROR: The process "9868" not found.
+ERROR: The process "18352" not found.
+Exception in thread ex-clustering:
+Traceback (most recent call last):
+  File "...\lib\threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "...\lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "...\expackage\classes\cluster.py", line 21, in wrapper
+    cluster_queue.put(f(*args))
+  File "...\expackage\classes\cluster.py", line 40, in fit_cluster
+    clusterer.fit(data)
+  File "...\lib\site-packages\hdbscan\hdbscan_.py", line 915, in fit
+    self._min_spanning_tree) = hdbscan(X, **kwargs)
+  File "...\lib\site-packages\hdbscan\hdbscan_.py", line 611, in hdbscan
+    core_dist_n_jobs, **kwargs)
+  File "...\lib\site-packages\joblib\memory.py", line 355, in __call__
+    return self.func(*args, **kwargs)
+  File "...\lib\site-packages\hdbscan\hdbscan_.py", line 278, in _hdbscan_boruvka_kdtree
+    n_jobs=core_dist_n_jobs, **kwargs)
+  File "hdbscan\_hdbscan_boruvka.pyx", line 375, in hdbscan._hdbscan_boruvka.KDTreeBoruvkaAlgorithm.__init__
+  File "hdbscan\_hdbscan_boruvka.pyx", line 411, in hdbscan._hdbscan_boruvka.KDTreeBoruvkaAlgorithm._compute_bounds
+  File "...\lib\site-packages\joblib\parallel.py", line 1017, in __call__
+    self.retrieve()
+  File "...\lib\site-packages\joblib\parallel.py", line 909, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "...\lib\site-packages\joblib\_parallel_backends.py", line 562, in wrap_future_result
+    return future.result(timeout=timeout)
+  File "...\lib\concurrent\futures\_base.py", line 435, in result
+    return self.__get_result()
+  File "...\lib\concurrent\futures\_base.py", line 384, in __get_result
+    raise self._exception
+joblib.externals.loky.process_executor.TerminatedWorkerError: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+Traceback (most recent call last):
+  File "...\lib\site-packages\cx_Freeze\initscripts\__startup__.py", line 40, in run
+    module.run()
+  File "...\lib\site-packages\cx_Freeze\initscripts\Console.py", line 37, in run
+    exec(code, {'__name__': '__main__'})
+  File "expackage/__main__.py", line 43, in <module>
+  File "...\lib\multiprocessing\context.py", line 149, in freeze_support
+    freeze_support()
+  File "...\lib\multiprocessing\spawn.py", line 69, in freeze_support
+    name, value = arg.split('=')
+ValueError: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "...\lib\site-packages\cx_Freeze\initscripts\__startup__.py", line 40, in run
+    module.run()
+  File "...\lib\site-packages\cx_Freeze\initscripts\Console.py", line 37, in run
+    exec(code, {'__name__': '__main__'})
+  File "expackage/__main__.py", line 43, in <module>
+Traceback (most recent call last):
+  File "...\lib\site-packages\cx_Freeze\initscripts\__startup__.py", line 40, in run
+  File "...\lib\multiprocessing\context.py", line 149, in freeze_support
+    module.run()
+    freeze_support()
+  File "...\lib\site-packages\cx_Freeze\initscripts\Console.py", line 37, in run
+  File "...\lib\multiprocessing\spawn.py", line 69, in freeze_support
+    exec(code, {'__name__': '__main__'})
+    name, value = arg.split('=')
+  File "expackage/__main__.py", line 43, in <module>
+ValueError: not enough values to unpack (expected 2, got 1)
+  File "...\lib\multiprocessing\context.py", line 149, in freeze_support
+    freeze_support()
+  File "...\lib\multiprocessing\spawn.py", line 69, in freeze_support
+    name, value = arg.split('=')
+ValueError: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "...\lib\site-packages\cx_Freeze\initscripts\__startup__.py", line 40, in run
+    module.run()
+  File "...\lib\site-packages\cx_Freeze\initscripts\Console.py", line 37, in run
+    exec(code, {'__name__': '__main__'})
+  File "expackage/__main__.py", line 43, in <module>
+  File "...\lib\multiprocessing\context.py", line 149, in freeze_support
+    freeze_support()
+  File "...\lib\multiprocessing\spawn.py", line 69, in freeze_support
+    name, value = arg.split('=')
+ValueError: not enough values to unpack (expected 2, got 1)
+ERROR: The process "16800" not found.
+ERROR: The process "7964" not found.
+ERROR: The process "13552" not found.
+ERROR: The process "17616" not found.
+Exception in thread ex-clustering:
+Traceback (most recent call last):
+  File "...\lib\threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "...\lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "...\expackage\classes\cluster.py", line 21, in wrapper
+    cluster_queue.put(f(*args))
+  File "...\expackage\classes\cluster.py", line 40, in fit_cluster
+    clusterer.fit(data)
+  File "...\lib\site-packages\hdbscan\hdbscan_.py", line 915, in fit
+    self._min_spanning_tree) = hdbscan(X, **kwargs)
+  File "...\lib\site-packages\hdbscan\hdbscan_.py", line 611, in hdbscan
+    core_dist_n_jobs, **kwargs)
+  File "...\lib\site-packages\joblib\memory.py", line 355, in __call__
+    return self.func(*args, **kwargs)
+  File "...\lib\site-packages\hdbscan\hdbscan_.py", line 278, in _hdbscan_boruvka_kdtree
+    n_jobs=core_dist_n_jobs, **kwargs)
+  File "hdbscan\_hdbscan_boruvka.pyx", line 375, in hdbscan._hdbscan_boruvka.KDTreeBoruvkaAlgorithm.__init__
+  File "hdbscan\_hdbscan_boruvka.pyx", line 411, in hdbscan._hdbscan_boruvka.KDTreeBoruvkaAlgorithm._compute_bounds
+  File "...\lib\site-packages\joblib\parallel.py", line 1017, in __call__
+    self.retrieve()
+  File "...\lib\site-packages\joblib\parallel.py", line 909, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "...\lib\site-packages\joblib\_parallel_backends.py", line 562, in wrap_future_result
+    return future.result(timeout=timeout)
+  File "...\lib\concurrent\futures\_base.py", line 435, in result
+    return self.__get_result()
+  File "...\lib\concurrent\futures\_base.py", line 384, in __get_result
+    raise self._exception
+joblib.externals.loky.process_executor.TerminatedWorkerError: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+Traceback (most recent call last):
+  File "...\lib\site-packages\cx_Freeze\initscripts\__startup__.py", line 40, in run
+    module.run()
+  File "...\lib\site-packages\cx_Freeze\initscripts\Console.py", line 37, in run
+    exec(code, {'__name__': '__main__'})
+  File "expackage/__main__.py", line 43, in <module>
+  File "...\lib\multiprocessing\context.py", line 149, in freeze_support
+    freeze_support()
+  File "...\lib\multiprocessing\spawn.py", line 69, in freeze_support
+    name, value = arg.split('=')
+ValueError: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "...\lib\site-packages\cx_Freeze\initscripts\__startup__.py", line 40, in run
+    module.run()
+  File "...\lib\site-packages\cx_Freeze\initscripts\Console.py", line 37, in run
+    exec(code, {'__name__': '__main__'})
+  File "expackage/__main__.py", line 43, in <module>
+  File "...\lib\multiprocessing\context.py", line 149, in freeze_support
+    freeze_support()
+  File "...\lib\multiprocessing\spawn.py", line 69, in freeze_support
+    name, value = arg.split('=')
+ValueError: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "...\lib\site-packages\cx_Freeze\initscripts\__startup__.py", line 40, in run
+    module.run()
+  File "...\lib\site-packages\cx_Freeze\initscripts\Console.py", line 37, in run
+    exec(code, {'__name__': '__main__'})
+  File "expackage/__main__.py", line 43, in <module>
+  File "...\lib\multiprocessing\context.py", line 149, in freeze_support
+    freeze_support()
+  File "...\lib\multiprocessing\spawn.py", line 69, in freeze_support
+    name, value = arg.split('=')
+ValueError: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "...\lib\site-packages\cx_Freeze\initscripts\__startup__.py", line 40, in run
+    module.run()
+  File "...\lib\site-packages\cx_Freeze\initscripts\Console.py", line 37, in run
+    exec(code, {'__name__': '__main__'})
+  File "expackage/__main__.py", line 43, in <module>
+  File "...\lib\multiprocessing\context.py", line 149, in freeze_support
+    freeze_support()
+  File "...\lib\multiprocessing\spawn.py", line 69, in freeze_support
+    name, value = arg.split('=')
+ValueError: not enough values to unpack (expected 2, got 1)
+ERROR: The process "5784" not found.
+ERROR: The process "16900" not found.
+ERROR: The process "18328" not found.
+ERROR: The process "17604" not found.
+Exception in thread ex-clustering:
+Traceback (most recent call last):
+  File "...\lib\threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "...\lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "...\expackage\classes\cluster.py", line 21, in wrapper
+    cluster_queue.put(f(*args))
+  File "...\expackage\classes\cluster.py", line 40, in fit_cluster
+    clusterer.fit(data)
+  File "...\lib\site-packages\hdbscan\hdbscan_.py", line 915, in fit
+    self._min_spanning_tree) = hdbscan(X, **kwargs)
+  File "...\lib\site-packages\hdbscan\hdbscan_.py", line 611, in hdbscan
+    core_dist_n_jobs, **kwargs)
+  File "...\lib\site-packages\joblib\memory.py", line 355, in __call__
+    return self.func(*args, **kwargs)
+  File "...\lib\site-packages\hdbscan\hdbscan_.py", line 278, in _hdbscan_boruvka_kdtree
+    n_jobs=core_dist_n_jobs, **kwargs)
+  File "hdbscan\_hdbscan_boruvka.pyx", line 375, in hdbscan._hdbscan_boruvka.KDTreeBoruvkaAlgorithm.__init__
+  File "hdbscan\_hdbscan_boruvka.pyx", line 411, in hdbscan._hdbscan_boruvka.KDTreeBoruvkaAlgorithm._compute_bounds
+  File "...\lib\site-packages\joblib\parallel.py", line 1017, in __call__
+    self.retrieve()
+  File "...\lib\site-packages\joblib\parallel.py", line 909, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "...\lib\site-packages\joblib\_parallel_backends.py", line 562, in wrap_future_result
+    return future.result(timeout=timeout)
+  File "...\lib\concurrent\futures\_base.py", line 435, in result
+    return self.__get_result()
+  File "...\lib\concurrent\futures\_base.py", line 384, in __get_result
+    raise self._exception
+joblib.externals.loky.process_executor.TerminatedWorkerError: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+Traceback (most recent call last):
+forrtl: error (200): program aborting due to control-C event
