@@ -1,0 +1,20 @@
+...\expackage-0.0.1-win-amd64-3.7>expackage.exe
+...\expackage-0.0.1-win-amd64-3.7\lib\joblib\parallel.py:711: UserWarning: Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1
+5184 clusters found. Cluster labels: [4242 3458 3078 ... 4476 4637 4660]
+Press any key to exit...
+
+...\expackage-0.0.1-win-amd64-3.7>Traceback (most recent call last):
+  File "...\lib\site-packages\cx_Freeze\initscripts\__startup__.py", line 40, in run
+    module.run()
+  File "...\lib\site-packages\cx_Freeze\initscripts\Console.py", line 37, in run
+    exec(code, {'__name__': '__main__'})
+  File "expackage/__main__.py", line 43, in <module>
+  File "...\lib\multiprocessing\context.py", line 149, in freeze_support
+    freeze_support()
+  File "...\lib\multiprocessing\spawn.py", line 74, in freeze_support
+    spawn_main(**kwds)
+  File "...\lib\multiprocessing\spawn.py", line 99, in spawn_main
+    new_handle = reduction.steal_handle(parent_pid, pipe_handle)
+  File "...\lib\multiprocessing\reduction.py", line 82, in steal_handle
+    _winapi.PROCESS_DUP_HANDLE, False, source_pid)
+OSError: [WinError 87] The parameter is incorrect
