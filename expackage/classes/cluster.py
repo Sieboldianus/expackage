@@ -6,14 +6,20 @@ Module for expackage clustering
 
 from __future__ import absolute_import
 
-import multiprocessing
+import threading
+import queue
 
-import multiprocessing.dummy as multiprocessing
 import hdbscan
 import numpy as np
 import pickle
 
-POOL = multiprocessing.Pool(processes=1)
+cluster_queue = queue.Queue()
+
+
+def store_in_queue(f):
+    def wrapper(*args):
+        cluster_queue.put(f(*args))
+    return wrapper
 
 
 class ClusterGen():
@@ -22,6 +28,7 @@ class ClusterGen():
         return
 
     @staticmethod
+    @store_in_queue
     def fit_cluster(clusterer, data):
         """Perform HDBSCAN clustering from features or distance matrix.
         Args:
@@ -45,14 +52,17 @@ class ClusterGen():
             min_samples=1)
         # Start clusterer on different thread
         # to prevent GUI from freezing
-        # with multiprocessing.get_context("spawn").Pool() as POOL:
-        #     async_result = POOL.apply_async(
-        #         fit_cluster, (clusterer, points))
-        #     clusterer = async_result.get()
-        async_result = POOL.apply_async(
-            ClusterGen.fit_cluster, (clusterer, points))
+
+        t = threading.Thread(
+            target=ClusterGen.fit_cluster,
+            args=(clusterer, points),
+            group=None,
+            name="ex-clustering",
+        )
+        t.start()
         # get results from clusterer
-        cluster_results = async_result.get()
+        cluster_results = cluster_queue.get()
+        # process results
         cluster_labels = cluster_results.labels_
         # return cluster points and number of clusters
         mask_noisy = (cluster_labels == -1)
