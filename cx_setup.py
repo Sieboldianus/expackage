@@ -83,7 +83,13 @@ PACKAGES_MOD = ["hdbscan", "multiprocessing"]
 EXCLUDES_MOD = [
     'scipy.spatial.cKDTree',
     "distutils",
-    'sklearn.externals.joblib']
+    'sklearn.externals.joblib',
+    'tkinter',
+    'PyQt4.QtSql',
+    'sqlite3',
+    'PyQt4.QtNetwork',
+    'PyQt4.QtScript',
+    'PyQt5']
 
 
 # GUI applications require a different base on Windows
