@@ -75,7 +75,8 @@ NUMPY_DLLS_FULLPATH.append(
 INCLUDE_FOLDERS_FILES = [
     (DISTUTILS_PATH, 'distutils'),
     'README.md',
-    'points.pkl',
+    'points.pkl',  # example data
+    'points_small.pkl',  # example data
 ] + NUMPY_DLLS_FULLPATH
 
 PACKAGES_MOD = ["hdbscan", "multiprocessing"]
