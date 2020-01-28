@@ -7,23 +7,13 @@ Module for expackage clustering
 from __future__ import absolute_import
 
 import multiprocessing
-# from multiprocessing import get_context()
-# from multiprocessing.dummy import get_context
 
-#import multiprocessing.dummy as multiprocessing
+import multiprocessing.dummy as multiprocessing
 import hdbscan
 import numpy as np
 import pickle
 
-multiprocessing.set_start_method('spawn')
 POOL = multiprocessing.Pool(processes=1)
-
-# multiprocessing.set_start_method('spawn')
-# multiprocessing.get_context('fork')
-
-# joblib.Parallel(n_jobs=1, prefer="threads")
-# with get_context("spawn").Pool() as POOL:
-#POOL = multiprocessing.Pool(processes=1)
 
 
 class ClusterGen():
