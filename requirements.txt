@@ -1,0 +1,4 @@
+# expackage requirements
+numpy
+cython
+hdbscan
